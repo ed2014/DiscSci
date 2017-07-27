@@ -18,6 +18,7 @@ xmlFormat <- function(doc, indent = 3) {
 # Define paths  <---- INPUT HERE (Obs: change metFolder and climate together!)
 
 rootFolder <- "C:\\GitHubRepos\\2017_DiscoveryScience" # high level location of files
+#rootFolder <- "./"
 
 # GCM <- c("HadGEM2-ES", "CESM1-CAM5", "GISS-EL-R", "BCC-CSM1.1", "GFDL-CM3", "NorESM1-M")
 
@@ -66,6 +67,7 @@ for(gc in 1:length(GCM)){
           
           # Define location of met files (default folder structure dependednt - Attention!!!!)
           metFolder <- paste0(rootFolder,"\\MetFiles\\",RCP[rc],"\\",GCM[gc],"\\",climates[cl] ,"\\")
+      #    metFolder <- paste0(".\\MetFiles\\",RCP[rc],"\\",GCM[gc],"\\",climates[cl] ,"\\")
           
           # find soil related sim
           # soils <- soilTypes[so]
